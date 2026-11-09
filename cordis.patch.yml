@@ -1,0 +1,5 @@
+# dsh-chat-delete bundle: the Host half owns the deletion endpoint;
+# client.js adds the sidebar button and confirmation dialog.
+- insert:
+    - id: chat-delete
+      name: 'dsh-chat-delete'

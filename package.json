@@ -1,0 +1,60 @@
+{
+  "name": "dsh-chat-delete",
+  "version": "1.0.0",
+  "description": "Delete individual chats from the sidebar, just like workspaces can be deleted.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "docs/*.png"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-client-ui-context-menu"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "sessions",
+    "chat",
+    "delete"
+  ],
+  "author": "Berikai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Berikai/dsh-chat-delete.git"
+  },
+  "homepage": "https://github.com/Berikai/dsh-chat-delete#readme",
+  "bugs": {
+    "url": "https://github.com/Berikai/dsh-chat-delete/issues"
+  }
+}

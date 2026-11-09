@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Chat delete",
+    "description": "Adds a delete button and menu item to each chat in the sidebar so individual chats can be removed without deleting their workspace."
+  }
+}
